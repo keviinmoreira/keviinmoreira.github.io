@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Moreira - Meus Projetos</title>
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>KEVIN MOREIRA</h1>
+                <h2>FULL-STACK DEVELOPER</h2>
+                <div class="contact-info">
+                    <span><i class="fas fa-envelope"></i> contact.kevinmoreira@gmail.com</span>
+                    <span><i class="fas fa-phone"></i> (+55) 21 9 7349-6474</span>
+                </div>
+            </div>
+            <div class="hero-banner-image">
+                <img src="profile_banner.png" alt="Kevin Moreira Banner Profile">
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="section">
+            <h2>About me</h2>
+            <p>
+                Ay! I'm Kevin Moreira, Full-Stack developer passionate for create innovation solutions and efficient. experienced with a lot of technologies, i'm searching for apply the best practices in software development scalables and robusts. There is é one workspace where i share some of my projects i develop, exploring different languages and frameworks.
+            </p>
+            <p>
+                My Technology journey started with curiosity to know how the logic things works. When i discovered the coding, i never stopped to do it. It can helps everybody to think and solve problems with effectiveness solutions for your routines.
+            </p>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <h2>My Projects</h2>
+            <div class="project-grid" id="projectGrid">
+                </div>
+            <button id="loadMoreBtn" class="load-more-btn">Load More</button>
+        </section>
+
+        <section id="contact-section" class="section">
+            <h2>Let's talk?</h2>
+            <p>If you have some project in mind, a contribuiting opportunity or just want to chat, you're free to contact me!</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Kevin Moreira. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/NetMalware" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kevin-moreira-15a9ba244/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
