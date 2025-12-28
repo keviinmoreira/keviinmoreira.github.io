@@ -5,6 +5,7 @@
     --text-color-light: #FFFFFF;
     --text-color-dark: #D1D1D1;
     --border-color: #8B5E45;
+    --navbar-footer-bg: #5D3D2C;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Montserrat', sans-serif;
 }
@@ -30,7 +31,8 @@ a {
 }
 
 a:hover {
-    opacity: 0.8;
+    color: var(--text-color-light);
+    opacity: 0.9;
 }
 
 ul {
@@ -47,8 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 .hero {
     padding: 80px 20px;
     background-color: var(--primary-bg);
-    background-image: radial-gradient(var(--secondary-bg) 2px, transparent 2px);
-    background-size: 30px 30px; 
+    background-image: radial-gradient(var(--accent-color) 1px, transparent 1px);
+    background-size: 35px 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,9 +77,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 220px;
     overflow: hidden;
     margin-right: 40px;
-    border: 3px solid var(--text-color-light);
+    border: 4px solid var(--text-color-light);
     flex-shrink: 0;
     border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .hero-banner-image img {
@@ -95,18 +98,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero h2 {
     font-size: 1.8rem;
-    color: var(--text-color-light);
+    color: var(--accent-color);
     font-weight: 300;
     margin-bottom: 1rem;
-    opacity: 0.9;
+    letter-spacing: 2px;
 }
 
 .navbar {
-    background-color: #5D3D2C;
+    background-color: var(--navbar-footer-bg);
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .navbar ul {
@@ -118,6 +122,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a {
     color: var(--text-color-light);
     font-weight: 600;
+    position: relative;
 }
 
 .navbar a::after {
@@ -128,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--text-color-light);
+    background-color: var(--accent-color);
     transition: width 0.3s ease;
 }
 
@@ -148,11 +153,22 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 15px;
     margin-bottom: 40px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.05);
 }
 
 .section h2 {
     font-size: 2.5rem;
     text-align: center;
+    color: var(--text-color-light);
+}
+
+.section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    margin: 10px auto 0;
 }
 
 .project-grid {
@@ -162,48 +178,57 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-card {
-    background-color: #7c543d;
-    border-radius: 8px;
+    background-color: var(--primary-bg);
+    border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
 .project-tags span {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--text-color-light);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
 }
 
 .project-links a {
     background-color: var(--text-color-light);
     color: var(--primary-bg);
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 6px;
     font-weight: 700;
+    display: inline-block;
 }
 
 .submit-btn, .load-more-btn {
     background-color: var(--text-color-light);
     color: var(--primary-bg);
-    padding: 15px 30px;
+    padding: 15px 35px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.submit-btn:hover, .load-more-btn:hover {
+    opacity: 0.9;
 }
 
 .footer {
-    background-color: #5D3D2C;
+    background-color: var(--navbar-footer-bg);
     color: var(--text-color-dark);
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 @media (max-width: 798px) {
@@ -212,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .hero-banner-image {
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         width: 180px;
         height: 180px;
     }
@@ -220,6 +245,6 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
     }
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.6rem;
     }
 }
