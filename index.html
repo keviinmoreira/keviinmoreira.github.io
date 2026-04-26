@@ -1,14 +1,16 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Moreira</title>
+    <meta name="description" content="Kevin Moreira | Software Developer focused on secure, scalable, and innovative solutions.">
+    <title>Kevin Moreira | Software Developer</title>
     <link rel="shortcut icon" href="profile.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -17,60 +19,68 @@
     <header class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>KEVIN MOREIRA</h1>
-                <h2>TECHNOLOGY</h2>
+                <p class="hero-label">Software Developer</p>
+                <h1>Kevin Moreira</h1>
+                <h2>Building Secure and Innovative Digital Solutions</h2>
+                <p class="hero-description">
+                    Early-career developer passionate about software development, cybersecurity, and technology-driven innovation.
+                </p>
                 <div class="contact-info">
                     <span><i class="fas fa-envelope"></i> contact.kevinmoreira@gmail.com</span>
                 </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="Kevin_Moreira_Resume.pdf" class="btn-secondary" download>Download Resume</a>
+                </div>
             </div>
             <div class="hero-banner-image">
-                <img src="banner.png" alt="Kevin Moreira Banner Profile">
+                <img src="banner.png" alt="Kevin Moreira Portfolio Banner">
             </div>
         </div>
     </header>
 
     <nav class="navbar">
         <ul>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact-section">Contact</a></li>
         </ul>
     </nav>
 
     <main class="container">
         <section id="about" class="section">
-            <h2>About me</h2>
+            <h2>About Me</h2>
             <p>
-                Hi! I’m Kevin Moreira, a Full-Stack Developer passionate about creating innovative and efficient solutions. I have experience with a wide range of technologies and I’m constantly seeking to apply best practices to build scalable, robust, and high-quality software.
-
-This workspace is where I share some of the projects I’ve developed, exploring different languages, frameworks, and architectures, always focused on learning and real-world problem solving.
-
-My technology journey began with a simple curiosity about how things work. When I discovered programming, I never stopped. Coding helps me think logically, solve problems creatively, and develop effective solutions that improve everyday routines.
+                I'm a Systems Analysis and Development graduate and a Technical Administration professional, combining business strategy with technical expertise. I have a strong interest in software development, cybersecurity, and innovation, with hands-on experience in Python, C#, and TypeScript.
+            </p>
+            <p>
+                I am continuously improving my skills through practical projects and lifelong learning. My goal is to contribute to impactful solutions while growing as a technology professional in collaborative and challenging environments.
             </p>
         </section>
 
         <section id="projects" class="section projects-section">
-            <h2>My Projects</h2>
+            <h2>Featured Projects</h2>
+            <p class="section-subtitle">Solutions focused on performance, security, and real-world impact.</p>
             <div class="project-grid" id="projectGrid"></div>
-            <button id="loadMoreBtn" class="load-more-btn">Load More</button>
+            <button id="loadMoreBtn" class="load-more-btn">Load More Projects</button>
         </section>
 
         <section id="contact-section" class="section">
-            <h2>Let's talk?</h2>
-            <p>If you have some project in mind, a contribuiting opportunity or just want to chat, you're free to contact me!</p>
+            <h2>Let's Connect</h2>
+            <p>Interested in collaborating, discussing opportunities, or simply connecting? I'd be glad to hear from you.</p>
             <form class="contact-form">
-                <input type="hidden" name="_subject" value="Nova mensagem!">
+                <input type="hidden" name="_subject" value="New Portfolio Message">
                 <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="Nome" required> 
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="Email" required> 
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="Assunto" rows="5" required></textarea> 
+                    <label for="message">Message</label>
+                    <textarea id="message" name="Message" rows="5" required></textarea>
                 </div>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
@@ -78,7 +88,7 @@ My technology journey began with a simple curiosity about how things work. When 
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Kevin Moreira. All rights reserved.</p>
+        <p>&copy; 2026 Kevin Moreira. All rights reserved.</p>
         <div class="social-links">
             <a href="https://github.com/keviinmoreira" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/kevin-moreira-15a9ba244/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
